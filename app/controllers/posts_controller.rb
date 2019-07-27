@@ -16,7 +16,7 @@ class PostsController < ApplicationController
       redirect_to posts_path
     else
       flash.now[:danger] = "Post attempt failed."
-      render new
+      render :new
     end
 
   end
