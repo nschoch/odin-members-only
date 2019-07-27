@@ -4,6 +4,6 @@
 <% if @posts.empty? %>
   <p>No posts.</p>
 <% end %>
-<% @posts.each do |p| %>
-  <p><%= p.user.name %> | <%= p.content %></p>
-<% end %>
+<ol class="posts">
+  <%= render @posts %>
+</ol>
